@@ -1,5 +1,2 @@
-*.d
-*.o
-quadris
-.vscode
-tests
+# CMake build directory
+build/
