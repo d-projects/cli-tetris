@@ -1,4 +1,4 @@
-### CLI Tetris
+# CLI Tetris
 This is a static variation of the game Tetris (it doesn't support animated movement). Commands should be entered on the CLI and output can be seen on the CLI.
 
 ## Requirements
