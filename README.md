@@ -14,8 +14,8 @@ Generate the makefile.
 Build the code (can be done without make (e.g. using Visual Studio on Windows)).
 
 -  `make`
--  To start the game without the optional flags: `./quadris`
--  Optional starting flags can be set as follows: `./quadris -seed 42`
+-  To start the game without the optional flags: `./cli_tetris`
+-  Optional starting flags can be set as follows: `./cli_tetris -seed 42`
 
 ## Starting Flags
 All of the below commands are optional.
