@@ -1,12 +1,4 @@
 #include "GameController.h"
-/**
- * TODO:
- * - Commit files
- * - MVC pattern
- * - GUI
- * - Look through all files
- * - Commit
- */
 
 int main(int argc, char** argv) {
     GameController* gc = GameController::createGame();

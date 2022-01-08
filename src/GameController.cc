@@ -7,7 +7,7 @@
 #include <random>
 
 // Private Constructor for GameController 
-GameController::GameController() : _textOnly{false}, _finished{false}, _restart{false}, _seed{0}, _level{0}, _highScore{0}, _scriptFile{"sequence.txt"} {
+GameController::GameController() : _textOnly{false}, _finished{false}, _restart{false}, _seed{0}, _level{0}, _highScore{0}, _scriptFile{"../script-files/sequence.txt"} {
     _board = new Board();
     _textView = new TextView();
     _textView->setBoard(_board);
@@ -41,10 +41,10 @@ void GameController::parseInitialInputs(int argc, char** argv) {
             if (++i == argc) break;
 
             std::string file(argv[i]);
-            _scriptFile = file;
+            _scriptFile = "../script-files/" + file;
             std::ifstream fin(file);
             if (!fin.is_open()) {
-                _scriptFile = "sequence.txt";
+                _scriptFile = "../script-files/sequence.txt";
             } else {
                 fin.close();
             }

@@ -1,10 +1,21 @@
-### Quadris
-Quadris is a similar game to Tetris. However, it is a static game and does not support animated movement. Commands should be entered on the CLI and output can be seen on the CLI and/or the GUI.
+### CLI Tetris
+This is a static variation of the game Tetris (it doesn't support animated movement). Commands should be entered on the CLI and output can be seen on the CLI.
+
+## Requirements
+- CMake
+- A C++ compiler and linker
 
 ## Starting the Game
-- Run `make` to compile the code.
-- Start the game without the optional flags with `./quadris`
-- Optional starting flags can be set as follows: `./quadris -seed 42`
+Generate the makefile.
+
+- `mkdir build && cd build`
+- `cmake ..`
+
+Build the code (can be done without make (e.g. using Visual Studio on Windows)).
+
+-  `make`
+-  To start the game without the optional flags: `./quadris`
+-  Optional starting flags can be set as follows: `./quadris -seed 42`
 
 ## Starting Flags
 All of the below commands are optional.
@@ -26,8 +37,3 @@ All of the below commands are optional.
 - `restart`: Restarts the game. Will set the level to level 0 but keep the seed and scriptfile (if provided at the beginning) the same
 
 Any shortened version of a command that is able to distinguish it from all other commands can be used as well (e.g. `ri` instead of `right`).
-
-## Contributors
-- Dulhan Waduge
-- Matthew Geng
-- Alison Zhang
